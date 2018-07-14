@@ -1,9 +1,11 @@
 package mac
 
 import (
+	. "fmt"
 	"os/exec"
 	"os/user"
 	"path/filepath"
+	"strings"
 )
 
 //////////////////////////////////////////////
