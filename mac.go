@@ -12,7 +12,7 @@ func RunApplescript(script string) (string, error) {
 	prettyOutput := strings.Replace(string(output), "\n", "", -1)
 
 	if err != nil {
-		return "", Errorf("%v: %v (%v%)", err.Error(), prettyOutput, script)
+		return "", Errorf("%v: %v (%v)", err.Error(), prettyOutput, script)
 	}
 
 	return prettyOutput, nil
